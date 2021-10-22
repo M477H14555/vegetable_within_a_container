@@ -33,9 +33,11 @@ print()
 print(f"{P1} Look in the box.")
 print(f"{P2} Look away.")
 print()
+
 for i in range(5, 0, -1):
     print(i)
     time.sleep(1)
+
 print(f"{P1}, lets open up the box!")
 
 if random.randint(0, 1) == 1:
@@ -80,10 +82,11 @@ if response.startswith("Y"):
     CIFB = not CIFB
     fb, sb = sb, fb
     print()
-    print(f"swapped")
+    print("swapped")
     print()
     print()
 else:
+    print()
     print("Not swapped")
     print()
     print()
